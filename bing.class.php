@@ -49,7 +49,9 @@ class Bing {
       //@public method 
       //@param String - $q - the term you want to search
       //@return Object $this object
-      public function search($q) {
+      public function search( $q ) {
+
+           $q = urlencode( $q );
 
            $endpoint = sprintf(self::ENDPOINT . '?Appid=%s&web.count=10&offset=20&query=%s&sources=web', $this->appid, $q);
 
