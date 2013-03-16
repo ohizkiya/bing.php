@@ -17,3 +17,7 @@ $obj->search( $q );
 echo$out = $obj->getHTML();
 
 ```
+
+# License
+
+MIT
